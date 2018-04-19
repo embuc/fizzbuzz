@@ -1,6 +1,9 @@
 
 /.gitignore
 .project
+.classpath
+.settings
+bin/
 ### macOS template
 # General
 .DS_Store
