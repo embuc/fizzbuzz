@@ -1,4 +1,3 @@
-
 @SuppressWarnings("javadoc")
 public class FizzStringReplacer implements StringReplacer{
 
