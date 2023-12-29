@@ -1,18 +1,17 @@
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-@SuppressWarnings("javadoc")
 public class BuzzTest {
 
 	@Test
 	public void returnBuzzStringOnNumberDivisibleByFive() {
-		Assert.assertEquals("Buzz", new Buzz().fizzBuzzer(0));
-		Assert.assertEquals("Buzz", new Buzz().fizzBuzzer(5));
-		Assert.assertEquals("Buzz", new Buzz().fizzBuzzer(15));
-		Assert.assertEquals("3", new Buzz().fizzBuzzer(3));
-		Assert.assertEquals("9", new Buzz().fizzBuzzer(9));
+		assertEquals("Buzz", new Buzz().fizzBuzzer(0));
+		assertEquals("Buzz", new Buzz().fizzBuzzer(5));
+		assertEquals("Buzz", new Buzz().fizzBuzzer(15));
+		assertEquals("3", new Buzz().fizzBuzzer(3));
+		assertEquals("9", new Buzz().fizzBuzzer(9));
 	}
 
 }

@@ -1,17 +1,13 @@
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import static org.junit.Assert.assertTrue;
-
-
-
-@SuppressWarnings("javadoc")
 public class BuildTest {
 
 	@Test
 	public void test() {
 		boolean condition = true;
-		assertTrue(condition );
+		assertTrue(condition);
 	}
 
 }

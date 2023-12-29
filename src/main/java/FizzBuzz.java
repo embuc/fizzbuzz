@@ -1,5 +1,4 @@
-@SuppressWarnings("javadoc")
-public class FizzBuzzerStringReplacer implements StringReplacer{
+public class FizzBuzz implements StringReplacer{
 	@Override
 	public String fizzBuzzer(int i) {
 		if (i % 5 == 0 && i % 3 == 0) {

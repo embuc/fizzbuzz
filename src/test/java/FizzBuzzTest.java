@@ -1,21 +1,21 @@
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SuppressWarnings("javadoc")
 public class FizzBuzzTest {
 	@Test
-	public void ifDevisableBy3And5ReturnFizzBuzz() {
-		assertEquals("FizzBuzz", new FizzBuzzerStringReplacer().fizzBuzzer(15));
+	public void ifDivisibleBy3And5ReturnFizzBuzz() {
+		assertEquals("FizzBuzz", new FizzBuzz().fizzBuzzer(15));
 	}
 
 	@Test
 	public void for30itShouldBeFizzBuzz() {
-		assertEquals("FizzBuzz", new FizzBuzzerStringReplacer().fizzBuzzer(30));
+		assertEquals("FizzBuzz", new FizzBuzz().fizzBuzzer(30));
 	}
 
 	@Test
 	public void for5ReturnFiveAsString() {
-		assertEquals("5", new FizzBuzzerStringReplacer().fizzBuzzer(5));
+		assertEquals("5", new FizzBuzz().fizzBuzzer(5));
 	}
 }

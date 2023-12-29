@@ -1,14 +1,10 @@
-@SuppressWarnings("javadoc")
-public class app {
-	@SuppressWarnings("boxing")
+public class App {
 	public static void main(String[] args) {
 		NumberGenerator generator = new NumberGenerator();
 		String[] numbers = generator.numbers().split(",");
-		StringReplacer fizzBuzz = new FizzBuzzerStringReplacer();
+		StringReplacer fizzBuzz = new FizzBuzz();
 		StringReplacer buzz = new Buzz();
-		StringReplacer fizz = new FizzStringReplacer();
-
-
+		StringReplacer fizz = new Fizz();
 
 		for (String number : numbers) {
 			int num = Integer.valueOf(number);
@@ -31,6 +27,4 @@ public class app {
 			}
 		}
 	}
-
-
 }
